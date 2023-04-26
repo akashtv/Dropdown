@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html, body {
+height: 100%;
+background: whitesmoke;
+}
+nav{
+  width: 400px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, .5)
+}
+nav ul{
+    position: relative;
+    height: 900px;
+    list-style-type: none;
+    background: whitesmoke;
+  
+}
+nav ul li a {
+  display: flex;
+  align-items: baseline;
+  font-family: arial;
+  font-size: 1.15em;
+  text-decoration: none;
+  text-transform: capitalize;
+  
+  color: #000;
+  padding: 10px 30px;
+  height: 50px;
+  transition:  .5s ease;
+  border-radius: 0 30px;
+}
+nav ul li a:hover {
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+nav ul ul{
+  position: absolute;
+  left: 400px;
+  width: 400px;
+  height: 700px;
+  top: 0;
+  display: none;
+  background: grey;
+  border-radius: 5px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 1);
+}
+nav ul span{
+     position: absolute;
+     right: 20px;
+     font-size: 1.5em;
+}
+nav ul .dropdown {
+  position: relative;
+}
+nav ul .dropdown:hover > ul{
+  display: initial;
+}
+nav ul .dropdown_two ul {
+    position: absolute;
+    background: whitesmoke;
+    left: 400px;
+    top: 0;
+}
+nav ul .dropdown_two:hover ul{
+   display: initial;
+}
